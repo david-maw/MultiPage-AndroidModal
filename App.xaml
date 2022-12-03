@@ -1,0 +1,36 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MultiPage"
+             x:Class="MultiPage.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="PrimaryColor">#512bdf</Color>
+            <Color x:Key="SecondaryColor">White</Color>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="Padding" Value="14,10" />
+            </Style>
+
+            <FontImageSource x:Key="GlyphPlus" Color="Black" Glyph="+"/>
+            <FontImageSource x:Key="GlyphMinus" Color="Black" Glyph="-"/>
+            <FontImageSource x:Key="GlyphT" Color="Black" Glyph="T"/>
+            <FontImageSource x:Key="GlyphU" Color="Black" Glyph="U"/>
+            <FontImageSource x:Key="GlyphV" Color="Black" Glyph="V"/>
+            <FontImageSource x:Key="GlyphW" Color="Black" Glyph="W"/>
+            <FontImageSource x:Key="GlyphX" Color="Black" Glyph="X"/>
+            <FontImageSource x:Key="GlyphY" Color="Black" Glyph="Y"/>
+            <FontImageSource x:Key="GlyphZ" Color="Black" Glyph="Z"/>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

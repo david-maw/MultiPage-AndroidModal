@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MultiPage.StartupPage"
+             Title="StartupPage"
+             BackgroundColor="PaleGoldenrod">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Letter X" IconImageSource="{StaticResource GlyphX }" Clicked="SimulatedCommand" CommandParameter="{Binding Text, Source={RelativeSource Self}}"/>
+        <ToolbarItem Text="Letter Y" IconImageSource="{StaticResource GlyphY}" Clicked="SimulatedCommand" CommandParameter="{Binding Text, Source={RelativeSource Self}}"/>
+        <ToolbarItem Text="Letter Z" IconImageSource="{StaticResource GlyphZ}" Clicked="SimulatedCommand" CommandParameter="{Binding Text, Source={RelativeSource Self}}"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <Label Text="Imagine a slow startup process happening"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        <Label Text="You should not be able to navigate away from this page"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        <Label x:Name="msg" FontSize="Header" HorizontalTextAlignment="Center"/>
+        <ActivityIndicator HorizontalOptions="Center" IsRunning="True" Color="Black"/>
+    </StackLayout>
+</ContentPage>
